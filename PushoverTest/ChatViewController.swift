@@ -17,7 +17,7 @@ class ChatViewController: MessageViewController {
     
     //pushover constants
     let appToken = "aadrkip1t1n4prq531ss7vi14zup6r"
-    let name = "ubkcwxzgrkh45fkichzpcg6ms8237p"
+    let name = "u3ba37zs37ftt72cab43qwp2xofidn"
     
     //arrays for Table View
     private var messages: [String] = []
@@ -35,9 +35,6 @@ class ChatViewController: MessageViewController {
         self.setTableView()
         
         //Set up storage messages
-        UserDefaults.standard.removeObject(forKey: "PushoverMessages")
-        UserDefaults.standard.removeObject(forKey: "PushoverTimes")
-        
         messages = UserDefaults.standard.array(forKey: "PushoverMessages") != nil ? UserDefaults.standard.array(forKey: "PushoverMessages") as! [String] : [String]()
         times = UserDefaults.standard.array(forKey: "PushoverTimes") != nil ? UserDefaults.standard.array(forKey: "PushoverTimes") as! [String] : [String]()
         
