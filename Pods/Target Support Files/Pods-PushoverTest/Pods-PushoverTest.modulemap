@@ -1,0 +1,6 @@
+framework module Pods_PushoverTest {
+  umbrella header "Pods-PushoverTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
